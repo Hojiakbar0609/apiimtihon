@@ -2,7 +2,6 @@ import React from "react";
 import { BsMoon } from "react-icons/bs";
 
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [theme, setTheme] = useState("light");
   useEffect(() => {

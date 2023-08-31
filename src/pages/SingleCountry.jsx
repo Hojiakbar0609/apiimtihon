@@ -5,7 +5,7 @@ import { UseFetch } from "../hooks/UseFetch";
 const SingleCountry = () => {
   const { slug } = useParams();
   const url = "https://countries-api-v7sn.onrender.com/countries/slug/" + slug;
-  const { data, pending } = UseFetch(url);
+  const { data, isPending, error } = UseFetch(url);
   console.log(data);
   return (
     <div className="mt-7 w-[90%] mx-auto dark:bg-[#2B3844] dark:text-white p-7 rounded">

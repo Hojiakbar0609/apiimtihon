@@ -1,8 +1,3 @@
-import React from 'react'
-import { useState } from 'react'
-import {AiOutlineSearch} from 'react-icons/ai'
-import { UseFetch } from '../hooks/UseFetch'
-
 const Header = ({ setSearch }) => {
     
     function handleInput(search) {
@@ -13,7 +8,6 @@ const Header = ({ setSearch }) => {
   return (
       <div className='w-[90%] mx-auto flex justify-between items-center mt-8  sm:grid-cols-1'>
           <div className='bg-[#fff] dark:bg-[#2B3844] dark:text-white flex items-center gap-2 rounded py-2 px-4 w-[400px] shadow-md'>
-              <AiOutlineSearch/>
               <input
                   onChange={(e)=> handleInput('search=' + e.target.value)}
                   className='outline-none capitalize p-2 dark:bg-[#2B3844] dark:text-white'

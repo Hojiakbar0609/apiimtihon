@@ -4,13 +4,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const CountriesList = ({ data }) => {
-  // console.log(data);
   return (
     <div>
       <ul className="z-0 mt-16 w-[95%] mx-auto grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2  grid-cols-1 place-items-center h-screen">
         {data &&
           data.data.map((data) => {
-            // console.log(data);
             return (
               <li
                 key={data._id}
